@@ -1,4 +1,6 @@
 hack-lab-seed
 =============
 
-Starter project for hack lab classes
+This is the staring point for a hacking class project.
+
+ 
