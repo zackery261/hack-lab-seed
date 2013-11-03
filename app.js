@@ -15,7 +15,9 @@ jQuery(document).ready(function () {
 			$.each(data.statuses,function(index,value){
 				//add the tweet to the ul
 				$('ul').append($('<li>').text(value.text));
+			
 			});
+			$('ul').listview('refresh').trigger("create");
 		});
 		
 	})
