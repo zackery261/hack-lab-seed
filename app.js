@@ -13,10 +13,13 @@ jQuery(document).ready(function () {
 		$.getJSON("http://hack-lab.herokuapp.com/find?text="+find_query,function(data){
 			// success!! 
 			$.each(data.statuses,function(index,value){
+				
 				//add the tweet to the ul
 				$('ul').append($('<li>').text(value.text));
-			
+
 			});
+			
+			//need to tell jquerymobile to refresh
 			$('ul').listview('refresh').trigger("create");
 		});
 		
